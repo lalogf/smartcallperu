@@ -29,8 +29,8 @@ class ClientsController < ApplicationController
 
     respond_to do |format|
       if @client.save
-        format.html { redirect_to @client, notice: 'Client was successfully created.' }
-        format.json { render :show, status: :created, location: @client }
+        format.html { redirect_to 'http://smartcallperu.squarespace.com' }
+        format.json { redirect_to 'http://smartcallperu.squarespace.com' }
       else
         format.html { render :new }
         format.json { render json: @client.errors, status: :unprocessable_entity }
