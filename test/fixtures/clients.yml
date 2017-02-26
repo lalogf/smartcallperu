@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  last_name: MyString
+  address: MyString
+  dni: MyString
+  dni_pic: MyString
+  dni_pic_2: MyString
+
+two:
+  name: MyString
+  last_name: MyString
+  address: MyString
+  dni: MyString
+  dni_pic: MyString
+  dni_pic_2: MyString
