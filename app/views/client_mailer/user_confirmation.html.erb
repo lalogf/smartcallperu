@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hay un nuevo usuario</h1>
+
+    <h2>Sus datos</h2>
+    <h3>Puedes ver el detalle en <a href="http://smartcallperu.herokuapp.com/clients/<%= @client.id%>">este link</a></h3>
+<p>
+  <strong>Name:</strong>
+  <%= @client.name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @client.last_name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @client.address %>
+</p>
+
+<p>
+  <strong>Dni:</strong>
+  <%= @client.dni %>
+</p>
+
+<p>
+  <strong>Dni pic:</strong>
+  <img style="width:200px;height:100%" src="https://ucarecdn.com/<%= @client.dni_pic %>/">
+</p>
+
+<p>
+  <strong>Dni pic 2:</strong>
+  <img style="width:200px;height:100%" src="https://ucarecdn.com/<%= @client.dni_pic_2 %>/">
+</p>
+<p>
+  <strong>Terms:</strong>
+  <%= @client.terms %>
+</p>
+<p>
+  <strong>Publicity:</strong>
+  <%= @client.publicity %>
+</p>
+<p>
+  <strong>Contract</strong>
+  <%= @client.contract %>
+</p>
+
+
+  </body>
+</html>

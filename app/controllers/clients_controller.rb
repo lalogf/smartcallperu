@@ -29,6 +29,7 @@ class ClientsController < ApplicationController
 
     respond_to do |format|
       if @client.save
+        ClientMailer.user_confirmation(@client).deliver
         format.html { redirect_to 'http://smartcallperu.squarespace.com' }
         format.json { redirect_to 'http://smartcallperu.squarespace.com' }
       else
