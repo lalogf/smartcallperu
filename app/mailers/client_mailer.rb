@@ -1,10 +1,9 @@
-class ClientMailer < ActionMailer::Base
-  default from: 'lalogf@gmail.com'
-  # layout 'mailer'
+require "mandrill"
 
+class ClientMailer < ActionMailer::Base
     def user_confirmation(client)
       @client = client
-      mail(to: "lalo@laboratoria.la", subject: 'Hay un nuevo usuario')
+      mail(from: "lalo@arteaparte.pe" , to: "lalogf@gmail.com", subject: 'Hay un nuevo usuario')
     end
 
 end
