@@ -11,7 +11,9 @@
       <th>Dni</th>
       <th>Dni pic</th>
       <th>Dni pic 2</th>
-      <th colspan="3"></th>
+      <th>Términos y condiciones</th>
+      <th>Publicidad</th>
+      <th>Contrato</th>
     </tr>
   </thead>
 
@@ -24,7 +26,7 @@
         <td><%= client.dni %></td>
         <td><a target="_blank" href="https://ucarecdn.com/<%= client.dni_pic %>/">Foto frontal</a></td>
         <td><a target="_blank" href="https://ucarecdn.com/<%= client.dni_pic_2 %>/">Foto posterior</a></td>
-        <td><%= client.contract %></td>
+        <td><%= client.terms %></td>
         <td><%= client.publicity %></td>
         <td><%= client.contract %></td>
         <td><%= link_to 'Show', client %></td>
